@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root{
+    --ff-main: 'Outfit', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bolder: 900;
+
+    --clr-primary-700: hsl(218, 44%, 22%);
+    --clr-primary-500: hsl(220, 15%, 55%);
+    --clr-primary-300: hsl(212, 45%, 89%);
+    --clr-primary-100: hsl(0, 0%, 100%);
+
+}
+
+
+/* Reset */
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+* {
+margin: 0;
+}
+html, body {
+min-height: 100vh;
+}
+body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+input, button, textarea, select {
+font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+#root, #__next {
+isolation: isolate;
+}
+
+
+/* Main CSS */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--clr-primary-300);
+    font-family: var(--ff-main);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    max-width: 340px;
+    margin: 1rem 5%;
+    padding: 1rem;
+    padding-bottom: 1.8rem;
+
+    background-color: var(--clr-primary-100);
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.qr-image{
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0.75rem;
+}
+
+h1{
+    font-size: 1.4rem;
+    font-weight: var(--fw-bolder);
+    color: var(--clr-primary-700);
+}
+
+p{
+    font-size: 1rem;
+    color: var(--clr-primary-500);
+}
